@@ -1,0 +1,44 @@
+#navbar{
+    flex-direction: column;
+}
+#navbar ul li a{
+    font-size: 1rem;
+    padding-bottom: 0.5rem 0.5rem ;
+}
+#home{
+    height: 280px;
+}
+#home::before{
+    height: 690px;
+}
+#home p{
+    font-size: 1rem;
+}
+.btn{
+    font-size: 13px;
+    padding: 4px;
+}
+#events-container{
+
+}
+#events{
+    flex-direction: column;
+}
+#zealicon-section{
+    overflow: hidden;
+    flex-wrap: wrap;
+    height: 100%;
+}
+#zealicon-section img{
+    width: 12rem;
+}
+#zealicon-section::before{
+    height: 400%;
+    width: 100%;
+}
+#contact-us form{
+    width: 60%;
+}
+.h-primary{
+    font-size: 2rem;
+}

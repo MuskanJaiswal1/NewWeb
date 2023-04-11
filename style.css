@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+#navbar {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+#logo {
+    margin: 0.3125rem 0.1875rem;
+}
+
+#logo img {
+    height: 6.5rem;
+}
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+#navbar ul li {
+    font-size: 1.3rem;
+    list-style: none;
+}
+
+#navbar ul li a {
+    color: white;
+    display: block;
+    padding: 0.1875rem 1.25rem;
+    border-radius: 1.25rem;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+#navbar ul li a:hover {
+    color: rgb(0, 0, 0);
+    background-color: white;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    height: 25rem;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before {
+    content: "";
+    background: url('bgOrigo.jpg') no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height: 112%;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+#home p {
+    color: rgb(124, 44, 113);
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.btn {
+    padding: 0.375rem 1.25rem;
+    border: 0.125rem solid white;
+    border-radius: 0.9375rem;
+    background-color: grey;
+    color: white;
+    margin: 2rem;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgb(128, 121, 121);
+    color: black;
+}
+
+#events-container {
+    background: rgb(185, 207, 227) center center/cover;
+    box-shadow: 9px 9px 10px 10px rgb(116, 93, 208);
+}
+
+#events-container h1 {
+    margin-top: 13rem;
+    text-align: center;
+}
+
+#events {
+    display: flex;
+    padding: 30px;
+}
+
+#events .box {
+    border: 0.125rem solid rgb(105, 3, 88);
+    box-shadow: 0.5rem 0.5rem 1.5rem rgb(142, 96, 148);
+    padding: 2.2rem;
+    margin: 0.2rem 0.4rem;
+    border-radius: 1.5rem;
+    background-color: rgb(234, 224, 224);
+}
+
+#events .box img {
+    height: 9rem;
+    width: 14rem;
+    display: block;
+    margin: auto;
+}
+
+#zealicon h1 {
+    color: white;
+}
+
+#zealicon::before {
+    content: "";
+    position: absolute;
+    background: url('bgOrigo..gif') no-repeat center center/cover;
+    width: 100%;
+    height: 189%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+#zealicon-section img {
+    height: 12.5rem;
+    width: 22rem;
+    padding: 3.125rem 5.7rem;
+}
+
+@media(max-width:700px){
+    #zealicon{
+        height: 100%;        
+    }
+}
+#contact-us {
+    position: relative;
+    background-color: rgb(168, 184, 228);
+    box-shadow: 5px 5px 18px 2px rgb(109, 84, 201);
+}
+
+#contact-us::before {
+    content: "";
+    position: absolute;
+    height: 100;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background-color: black;
+}
+
+#contact-box {
+    display: flex;
+    height: 75vh;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box input,
+#contact-box textarea {
+    width: 100%;
+    font-family: cursive;
+    border-radius: 9px;
+    font-size: 1.1rem;
+    padding: 0.5rem;
+}
+
+#contact-box form {
+    width: 40%;
+}
+
+#contact-box label {
+    font-size: 1.5rem;
+    font-family: cursive;
+    font-weight: 545;
+}
+.submitbtn{
+    padding: 0.5rem 1.25rem;
+    border: 0.135rem solid rgba(9, 1, 20, 0.821);
+    border-radius: 0.9375rem;
+    background-color: grey;
+    margin: 2rem;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    cursor: pointer;
+    position: absolute;
+    bottom: 12px;
+    right: 220px;
+}
+.submitbtn:hover{
+    background-color: rgb(73, 42, 174);
+    color: white;
+}
+
+footer {
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+.h-primary {
+    font-family: "Audiowide", sans-serif;
+    font-size: 3.8rem;
+    padding: 1rem;
+    color: rgb(48, 46, 46);
+}
+
+.h-secondary {
+    font-size: 2.4rem;
+    font-family:cursive;
+    padding: 1rem;
+}
+
+.center {
+    text-align: center;
+}
